@@ -1,3 +1,18 @@
+@media screen and (max-width: 480px) {
+	.caixa {
+		width: auto;
+  }
+
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+}
+
 * {
   font-family: 'Raleway', sans-serif;
 }
