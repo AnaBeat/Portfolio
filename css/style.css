@@ -1,5 +1,6 @@
 * {
   font-family: 'Raleway', sans-serif;
+  margin: 0;
 }
 
 .caixa {
@@ -10,7 +11,7 @@
 
 header {
   min-height: 60px;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -57,22 +58,46 @@ input#control-nav {
   opacity: 0;
 }
 
-img {
+
+.apresentacao {
+  padding: 6em 0 2em;
+  margin: 0 auto;
+  background: #524A4E;
+}
+
+.titulo-apresentacao {
+  font-size: 2em;
+  margin: 0 0 -2em;
+}
+
+.conteudo-apresentacao {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.texto-apresentacao {
+  width: 70%;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4em 0;
+}
+
+.imagem-apresentacao {
+  width: 29%;
   border-radius: 50%;
 }
 
-header p {
-  width: 70%;
-  display: inline-block;
-  vertical-align: top;
-}
-
 .links {
-  text-align: center;
+  display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
  .links li {
    display: inline;
    margin-left: 15px;
+   padding-top: 2.65rem;
+    margin-right: 3.266rem;
  }
 
  .links a {
@@ -88,7 +113,7 @@ header p {
 
 
  @media screen and (max-width: 767px) {
-   .caixa {
+   .caixa, .conteudo-apresentacao{
      width: 100%;
    }
 
