@@ -86,6 +86,7 @@ input#control-nav {
 .imagem-apresentacao {
   width: 29%;
   border-radius: 50%;
+  float: right;
 }
 
 .links {
@@ -215,6 +216,11 @@ input#control-nav {
 
   section {
     padding: 30px 15px 10px;
+  }
+
+  .imagem-apresentacao {
+    width: 100%;
+    height: auto;
   }
 
   @media screen and (max-width: 480px) {
