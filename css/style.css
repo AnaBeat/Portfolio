@@ -66,8 +66,8 @@ input#control-nav {
 }
 
 .titulo-apresentacao {
-  font-size: 2em;
-  margin: 0 0 -2em;
+  font-size: 3em;
+  margin: 0 0 -1em;
 }
 
 .conteudo-apresentacao {
@@ -111,10 +111,34 @@ input#control-nav {
    text-decoration: underline;
  }
 
+ #sobre-mim {
+   padding: 2em 0;
+   margin: 0 auto;
+   background: #FDEFF4;
+ }
+
+ .titulo-sobre {
+   font-size: 2em;
+   margin: 1em 0;
+ }
+
+ .conteudo-sobre {
+   width: 940px;
+   margin: 0 auto;
+ }
+
+.texto-sobre {
+  padding: 1em 0;
+}
+
+.assinatura {
+ font-family: 'Gwendolyn', cursive;
+ font-size: 2em;
+}
 
 
  @media screen and (max-width: 767px) {
-   .caixa, .conteudo-apresentacao{
+   .caixa, .conteudo-apresentacao, .conteudo-sobre{
      width: 100%;
    }
 
