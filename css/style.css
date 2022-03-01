@@ -1,55 +1,71 @@
-@media screen and (max-width: 480px) {
-	.caixa {
-		width: auto;
-  }
-
-
-	nav {
-		position: static;
-	}
-
-	.lista-beneficios, .imagem-beneficios {
-		width: 100%;
-	}
-}
-
 * {
   font-family: 'Raleway', sans-serif;
 }
 
-header {
-  background: #524A4E;
-  padding: 20px 0;
-}
-
-.nome {
-  color: #FFC0D3;
-}
 .caixa {
   position: relative;
   width: 940px;
   margin: 0 auto;
 }
- nav {
+
+header {
+  min-height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #524A4E;
+  padding: 20px 0;
+  z-index: 2;
+}
+
+nav {
    position: absolute;
    right: 0;
    top: 0;
  }
 
- nav li {
+header h1 a {
+  color: #FFC0D3;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav li {
    display: inline;
    margin-left: 15px;
  }
 
- nav a {
-   text-decoration: none;
-   color: #FFC0D3;
- }
+header li a {
+  padding: 0 10px;
+  color: #FFC0D3;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
 
- nav a:hover {
-   color: #FFA8B8;
-   text-decoration: underline;
- }
+header li a:hover {
+  color: #FFA8B8;
+  text-decoration: underline;
+}
+
+input#control-nav {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+img {
+  border-radius: 50%;
+}
+
+header p {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+}
 
 .links {
   text-align: center;
@@ -68,3 +84,118 @@ header {
    color: #FFA8B8;
    text-decoration: underline;
  }
+
+
+
+ @media screen and (max-width: 767px) {
+   .caixa {
+     width: 100%;
+   }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    background: #524A4E;
+    overflow-x: auto;
+    z-index: 2;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+  }
+
+  header ul.lista {
+    padding: 0;
+  }
+
+  header ul.lista li {
+    width: 100%;
+    border: solid #ccc;
+    border-width: 0 0 1px;
+  }
+
+  header li a {
+    display: block;
+    padding: 15px 10px;
+  }
+
+  header li a:hover {
+    background-color: #FDEFF4;
+  }
+
+  .control-nav { /* label icon */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    width: 30px;
+    padding: 5px 0;
+    border: solid #ffc0d3;
+    border-width: 3px 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .control-nav:before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #ffc0d3;
+  }
+
+  .control-nav-close {
+    position: fixed; /* label layer */
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+  }
+
+  /* checked nav */
+  input#control-nav {
+    display: block;
+  }
+
+  input#control-nav:focus ~ .control-nav {
+    border-color: #000;
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.3);
+  }
+
+  input#control-nav:focus ~ .control-nav:before {
+    background: #000;
+  }
+
+  input#control-nav:checked ~ nav,
+  input#control-nav:checked ~ .control-nav-close {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  header+section {
+    padding-top: 80px;
+  }
+
+  section {
+    padding: 30px 15px 10px;
+  }
+
+  @media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 10px;
+  }
+}
