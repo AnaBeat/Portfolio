@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  background: #FDEFF4;
+}
+
 .caixa {
   position: relative;
   width: 940px;
@@ -15,7 +19,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  background: #524A4E;
+  background: #FDEFF4;
   padding: 20px 0;
   z-index: 2;
 }
@@ -27,7 +31,7 @@ nav {
  }
 
 header h1 a {
-  color: #FFC0D3;
+  color: #FF5C8D;
   text-decoration: none;
   font-size: 20px;
 }
@@ -39,8 +43,8 @@ nav li {
 
 header li a {
   padding: 0 10px;
-  color: #FFC0D3;
-  font-size: 16px;
+  color: #FF5C8D;
+  font-weight: bold;
   text-decoration: none;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
@@ -62,12 +66,12 @@ input#control-nav {
 .apresentacao {
   padding: 6em 0 2em;
   margin: 0 auto;
-  background: #524A4E;
 }
 
 .titulo-apresentacao {
   font-size: 3em;
   margin: 0 0 -1em;
+  color: #524A4E;
 }
 
 .conteudo-apresentacao {
@@ -103,7 +107,8 @@ input#control-nav {
 
  .links a {
    text-decoration: none;
-   color: #FFC0D3;
+   color: #FF5C8D;
+   font-weight: bold;
  }
 
  .links a:hover {
@@ -114,12 +119,13 @@ input#control-nav {
  #sobre-mim {
    padding: 2em 0;
    margin: 0 auto;
-   background: #FDEFF4;
+   background: #FFC0D3;
  }
 
- .titulo-sobre {
+ .titulo {
    font-size: 2em;
    margin: 1em 0;
+   color: #524A4E;
  }
 
  .conteudo-sobre {
@@ -134,12 +140,39 @@ input#control-nav {
 .assinatura {
  font-family: 'Gwendolyn', cursive;
  font-size: 2em;
+ color: #524A4E;
 }
 
+#skills {
+  padding: 2em 0;
+  margin: 0 auto;
+}
+
+.skills {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.skills-lista li {
+  display: inline-block;
+  text-align: center;
+  width: 16%;
+  vertical-align: top;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border-radius: 10%;
+  background: #FFC0D3;
+}
+
+.titulo-skill {
+  color: #FF5C8D;
+}
 
  @media screen and (max-width: 767px) {
-   .caixa, .conteudo-apresentacao, .conteudo-sobre{
+   .caixa, .conteudo-apresentacao, .conteudo-sobre, .skills{
      width: 100%;
+     padding: 0 0em 0px 1em;
    }
 
   header nav {
@@ -148,7 +181,7 @@ input#control-nav {
     right: 0;
     bottom: 0;
     width: 250px;
-    background: #524A4E;
+    background: #FDEFF4;
     overflow-x: auto;
     z-index: 2;
     -webkit-transition: all 500ms ease;
@@ -184,7 +217,7 @@ input#control-nav {
     display: block;
     width: 30px;
     padding: 5px 0;
-    border: solid #ffc0d3;
+    border: solid #FF5C8D;
     border-width: 3px 0;
     z-index: 2;
     cursor: pointer;
@@ -194,7 +227,7 @@ input#control-nav {
     content: "";
     display: block;
     height: 3px;
-    background: #ffc0d3;
+    background: #FF5C8D;
   }
 
   .control-nav-close {
@@ -245,6 +278,7 @@ input#control-nav {
   .imagem-apresentacao {
     width: 100%;
     height: auto;
+    padding: 0 1em 0px 0em;
   }
 
   @media screen and (max-width: 480px) {
