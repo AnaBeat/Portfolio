@@ -62,56 +62,53 @@ input#control-nav {
   opacity: 0;
 }
 
+#apresentacao {
+  padding: 6em 0 2em 0px;
+}
 
-.apresentacao {
-  padding: 6em 0 2em;
-  margin: 0 auto;
+.container {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 10em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .titulo-apresentacao {
-  font-size: 3em;
-  margin: 0 0 -1em;
+  font-size: 2em;
   color: #524A4E;
-}
-
-.conteudo-apresentacao {
-  width: 940px;
-  margin: 0 auto;
+  font-weight: bold;
 }
 
 .texto-apresentacao {
-  width: 70%;
-  vertical-align: top;
-  display: inline-block;
   font-size: 20px;
-  margin: 4em 0;
 }
 
 .imagem-apresentacao {
   width: 29%;
   border-radius: 50%;
-  float: right;
+  margin: 0 2em;
 }
 
-.links {
-  display: flex;
-    align-items: center;
-    justify-content: flex-start;
+.link {
+  margin-right: 4%;
+  padding-top: 2em;
 }
- .links li {
-   display: inline;
-   margin-left: 15px;
-   padding-top: 2.65rem;
-    margin-right: 3.266rem;
- }
 
- .links a {
+.link a {
    text-decoration: none;
    color: #FF5C8D;
    font-weight: bold;
  }
 
- .links a:hover {
+.link a:hover {
    color: #FFA8B8;
    text-decoration: underline;
  }
@@ -138,7 +135,6 @@ input#control-nav {
 }
 
 .assinatura {
- font-family: 'Gwendolyn', cursive;
  font-size: 2em;
  color: #524A4E;
 }
@@ -156,7 +152,6 @@ input#control-nav {
 
 .skills-lista li {
   display: inline-block;
-  text-align: center;
   width: 16%;
   vertical-align: top;
   padding: 30px 20px;
@@ -170,10 +165,20 @@ input#control-nav {
 }
 
  @media screen and (max-width: 767px) {
-   .caixa, .conteudo-apresentacao, .conteudo-sobre, .skills{
+   .caixa, .links{
      width: 100%;
-     padding: 0 0em 0px 1em;
+     text-align: center;
    }
+
+   .titulo-apresentacao{
+     font-size: 2em;
+   }
+
+   .container {
+     height: auto;
+     margin-left: 2em;
+   }
+
 
   header nav {
     position: fixed;
@@ -212,8 +217,8 @@ input#control-nav {
 
   .control-nav { /* label icon */
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 30px;
+    top: 10px;
     display: block;
     width: 30px;
     padding: 5px 0;
@@ -275,11 +280,6 @@ input#control-nav {
     padding: 30px 15px 10px;
   }
 
-  .imagem-apresentacao {
-    width: 100%;
-    height: auto;
-    padding: 0 1em 0px 0em;
-  }
 
   @media screen and (max-width: 480px) {
   header h1 {
