@@ -68,18 +68,26 @@ input#control-nav {
 
 .container {
   display: flex;
-  height: 300px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+
+.container-esq {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.ml {
   margin-left: 10em;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.mar {
+  margin: 0 10em;
 }
+
 
 .titulo-apresentacao {
   font-size: 2em;
@@ -113,9 +121,8 @@ input#control-nav {
    text-decoration: underline;
  }
 
- #sobre-mim {
+ #sobre-mim, #hobbies {
    padding: 2em 0;
-   margin: 0 auto;
    background: #FFC0D3;
  }
 
@@ -125,58 +132,123 @@ input#control-nav {
    color: #524A4E;
  }
 
- .conteudo-sobre {
-   width: 940px;
-   margin: 0 auto;
- }
-
 .texto-sobre {
   padding: 1em 0;
 }
 
-.assinatura {
- font-size: 2em;
- color: #524A4E;
-}
 
 #skills {
   padding: 2em 0;
   margin: 0 auto;
 }
 
-.skills {
-  width: 940px;
-  margin: 0 auto;
-  padding: 50px 0;
+.skills, .hobbies {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	flex-shrink: 1;
+	justify-content: center;
 }
 
-.skills-lista li {
-  display: inline-block;
-  width: 16%;
-  vertical-align: top;
-  padding: 30px 20px;
-  box-sizing: border-box;
-  border-radius: 10%;
-  background: #FFC0D3;
+.skill {
+	position: relative;
+	margin: .5em;
+	width: 100%;
+	max-width: 150px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.skill::before {
+  display: block;
+  content: "";
+  margin-top: 100%;
+}
+
+.item-skill {
+  border: #FFC0D3 solid 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.item-skill:hover {
+  background: #FF5C8D;
 }
 
 .titulo-skill {
-  color: #FF5C8D;
+  position: absolute;
+	top: 18%;
+	left: 0;
+	right: 0;
+	color: #FF5C8D;
+	padding: .5em 0;
+  font-size: 2em;
 }
 
+.titulo-skill:hover {
+  color: #FFC0D3;
+}
+
+.hobbie {
+	position: relative;
+	margin: .5em;
+	width: 100%;
+	max-width: 150px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.hobbie::before {
+  display: block;
+  content: "";
+  margin-top: 100%;
+}
+
+.item-hobbie {
+  border: #FDEFF4 solid 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.item-hobbie:hover {
+  background: #FF5C8D;
+}
+
+.titulo-hobbie {
+  position: absolute;
+	top: 18%;
+	left: 0;
+	right: 0;
+	color: #FF5C8D;
+	padding: .5em 0;
+  font-size: 1.6em;
+}
+
+.titulo-hobbie:hover {
+  color: #FDEFF4;
+}
+
+
  @media screen and (max-width: 767px) {
-   .caixa, .links{
+   .caixa, .links, .container, .container-esq{
      width: 100%;
-     text-align: center;
    }
 
    .titulo-apresentacao{
      font-size: 2em;
    }
 
-   .container {
+   .container, .container-esq {
      height: auto;
-     margin-left: 2em;
+     margin: 0px 0 0px 2%;
    }
 
 
