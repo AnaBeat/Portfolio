@@ -133,7 +133,7 @@ input#control-nav {
  }
 
 .texto-sobre {
-  padding: 1em 0;
+  padding: 1em;
 }
 
 
@@ -235,7 +235,6 @@ input#control-nav {
 .titulo-hobbie:hover {
   color: #FDEFF4;
 }
-
 
  @media screen and (max-width: 767px) {
    .caixa, .links, .container, .container-esq{
