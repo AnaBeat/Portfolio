@@ -176,7 +176,7 @@ input#control-nav {
 }
 
 .item-skill:hover {
-  background: #FF5C8D;
+  background: #FFC0D3;
 }
 
 .titulo-skill {
@@ -184,13 +184,13 @@ input#control-nav {
 	top: 18%;
 	left: 0;
 	right: 0;
-	color: #FF5C8D;
 	padding: .5em 0;
   font-size: 2em;
 }
 
-.titulo-skill:hover {
-  color: #FFC0D3;
+.icone  {
+  color: #FF5C8D;
+  font-size: 1em;
 }
 
 .hobbie {
@@ -218,8 +218,8 @@ input#control-nav {
   left: 0;
 }
 
-.item-hobbie:hover {
-  background: #FF5C8D;
+.item-hobbie:hover  {
+  background: #FDEFF4;
 }
 
 .titulo-hobbie {
@@ -227,14 +227,27 @@ input#control-nav {
 	top: 18%;
 	left: 0;
 	right: 0;
-	color: #FF5C8D;
 	padding: .5em 0;
   font-size: 1.6em;
 }
 
-.titulo-hobbie:hover {
-  color: #FDEFF4;
+
+.formacao {
+  margin-left: 15px;
+  border: #FFC0D3 solid 2px;
+  border-radius: 25px;
+  padding: 9px;
 }
+
+.formacao:first-child {
+  margin: 0;
+}
+
+.formacao:hover {
+  background: #FFC0D3;
+}
+
+
 
  @media screen and (max-width: 767px) {
    .caixa, .links, .container, .container-esq{
@@ -248,6 +261,14 @@ input#control-nav {
    .container, .container-esq {
      height: auto;
      margin: 0px 0 0px 2%;
+   }
+
+   .container {
+     flex-direction: column;
+   }
+
+   .formacao {
+     margin: 0;
    }
 
 
