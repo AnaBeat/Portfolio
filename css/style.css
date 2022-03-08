@@ -1,6 +1,8 @@
 * {
   font-family: 'Raleway', sans-serif;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -102,7 +104,7 @@ input#control-nav {
 .imagem-apresentacao {
   width: 29%;
   border-radius: 50%;
-  margin: 0 2em;
+  margin: 1em 2em;
 }
 
 .link {
@@ -121,7 +123,7 @@ input#control-nav {
    text-decoration: underline;
  }
 
- #sobre-mim, #hobbies {
+ #sobre-mim, #hobbies, #projetos {
    padding: 2em 0;
    background: #FFC0D3;
  }
@@ -137,7 +139,7 @@ input#control-nav {
 }
 
 
-#skills {
+#skills, #formacoes {
   padding: 2em 0;
   margin: 0 auto;
 }
@@ -166,7 +168,7 @@ input#control-nav {
 }
 
 .item-skill {
-  border: #FFC0D3 solid 2px;
+  border: #FFC0D3 solid 1px;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -209,7 +211,7 @@ input#control-nav {
 }
 
 .item-hobbie {
-  border: #FDEFF4 solid 2px;
+  border: #FDEFF4 solid 1px;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -231,10 +233,9 @@ input#control-nav {
   font-size: 1.6em;
 }
 
-
 .formacao {
   margin-left: 15px;
-  border: #FFC0D3 solid 2px;
+  border: #FFC0D3 solid 1px;
   border-radius: 25px;
   padding: 9px;
 }
@@ -247,10 +248,67 @@ input#control-nav {
   background: #FFC0D3;
 }
 
+.projeto {
+  border: 1px solid #FDEFF4;
+  background-color: transparent;
+  width: 270px;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 1em;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.projeto-img {
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.projeto-1 {
+  background-image: url('../img/jogo-forca.jpg');
+}
+
+.projeto-2 {
+  background-image: url('../img/codificador.jpg');
+}
+
+.projeto h2 {
+  padding: 10px;
+  color: #524A4E;
+}
+.projeto p {
+  padding-bottom: 10px;
+}
+
+.botao {
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid #FDEFF4;
+  display: block;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-align: center;
+  margin: 5px 0;
+  color: #FF5C8D;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background-color: #FDEFF4;
+}
+
+.botao:active {
+  position: relative;
+  top: 1px;
+}
 
 
  @media screen and (max-width: 767px) {
-   .caixa, .links, .container, .container-esq{
+   .caixa, .links {
      width: 100%;
    }
 
