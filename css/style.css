@@ -398,6 +398,7 @@ input#control-nav {
   min-height: 100px;
   position: relative;
 }
+
 .mensagem textarea {
   position: absolute;
   height: 100%;
@@ -406,8 +407,6 @@ input#control-nav {
   background: #fae9fb;
   border: 2px solid #FF5C8D;
   border-radius: 6px;
-  outline: none;
-  transition all 0.3s ease;
 }
 
 .mensagem textarea:focus {
@@ -446,6 +445,25 @@ input#control-nav {
 
 
 /*footer*/
+
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #FFC0D3;
+  text-align: center;
+}
+
+footer p {
+  color: #FF5C8D;
+  margin: 1em;
+}
+
+footer .fab {
+  font-size: 1.5em;
+  color: #FF5C8D;
+  margin: 2px;
+}
 
 
 /*Responsivo*/
@@ -588,3 +606,4 @@ input#control-nav {
     margin-left: 10px;
   }
 }
+ }
