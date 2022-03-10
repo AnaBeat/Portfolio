@@ -1,3 +1,4 @@
+/*Configurações globais*/
 * {
   font-family: 'Raleway', sans-serif;
   margin: 0;
@@ -8,6 +9,8 @@
 body {
   background: #FDEFF4;
 }
+
+/*Header e menu*/
 
 .caixa {
   position: relative;
@@ -63,6 +66,8 @@ input#control-nav {
   left: -9999px;
   opacity: 0;
 }
+
+/*Section apresentação*/
 
 #apresentacao {
   padding: 6em 0 2em 0px;
@@ -123,6 +128,8 @@ input#control-nav {
    text-decoration: underline;
  }
 
+ /*Section sobre mim */
+
  #sobre-mim, #hobbies, #projetos {
    padding: 2em 0;
    background: #FFC0D3;
@@ -137,6 +144,8 @@ input#control-nav {
 .texto-sobre {
   padding: 1em;
 }
+
+/*Section skills*/
 
 
 #skills, #formacoes {
@@ -188,12 +197,15 @@ input#control-nav {
 	right: 0;
 	padding: .5em 0;
   font-size: 2em;
+  color: #524A4E;
 }
 
 .icone  {
   color: #FF5C8D;
   font-size: 1em;
 }
+
+/*Section hobbie*/
 
 .hobbie {
 	position: relative;
@@ -231,7 +243,10 @@ input#control-nav {
 	right: 0;
 	padding: .5em 0;
   font-size: 1.6em;
+  color: #524A4E;
 }
+
+/*Section formação*/
 
 .formacao {
   margin-left: 15px;
@@ -247,6 +262,8 @@ input#control-nav {
 .formacao:hover {
   background: #FFC0D3;
 }
+
+/*Section projetos*/
 
 .projeto {
   border: 1px solid #FDEFF4;
@@ -306,6 +323,132 @@ input#control-nav {
   top: 1px;
 }
 
+/*Section contato*/
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+
+.img-contato {
+  max-width: 55%;
+}
+
+.img-contato img {
+  width: 100%;
+}
+
+.titulo-contato {
+  font-size: 2em;
+  font-weight: bold;
+  color: #524A4E;
+}
+
+.conteudo form {
+  width: 40%;
+  margin-right: 30px;
+}
+
+.input-caixa {
+  height: 50px;
+  width: 100%;
+  margin: 16px 0;
+  position: relative;
+}
+
+.input-caixa input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: #fae9fb;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.input-caixa input:focus,
+.input-caixa input:valid{
+  border-color: #FF5C8D;
+  background-color: #fff;
+}
+
+.input-caixa label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #636c72;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.input-caixa input:focus ~ label,
+.input-caixa input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: #FF5C8D;
+  background: #fdeff4;
+}
+.mensagem {
+  min-height: 100px;
+  position: relative;
+}
+.mensagem textarea {
+  position: absolute;
+  height: 100%;
+  width: 100%; 
+  resize: none;
+  background: #fae9fb;
+  border: 2px solid #FF5C8D;
+  border-radius: 6px;
+  outline: none;
+  transition all 0.3s ease;
+}
+
+.mensagem textarea:focus {
+  border-color: #FF5C8D;
+  background-color: #fff;
+}
+.mensagem label {
+  position: absolute;
+  font-size: 16px;
+  color: #636c72;
+  left: 18px;
+  top: 6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.mensagem textarea:focus ~ label{
+  left: 12px;
+  top: -10px;
+  color: #FF5C8D;
+  font-size: 14px;
+  background: #fff;
+}
+.input-caixa input[type="submit"]{
+  color: #fff;
+  background: #FF5C8D;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.input-caixa input[type="submit"]:hover{
+  background-color: #d43ddb;
+}
+
+
+/*footer*/
+
+
+/*Responsivo*/
 
  @media screen and (max-width: 767px) {
    .caixa, .links {
@@ -328,6 +471,13 @@ input#control-nav {
    .formacao {
      margin: 0;
    }
+
+   .img-caixa{
+    max-width: 70%;
+  }
+  .conteudo{
+    padding: 10px 0;
+  }
 
 
   header nav {
