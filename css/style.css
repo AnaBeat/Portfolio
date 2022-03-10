@@ -165,7 +165,7 @@ input#control-nav {
 	position: relative;
 	margin: .5em;
 	width: 100%;
-	max-width: 150px;
+	max-width: 80px;
 	text-align: center;
 	overflow: hidden;
 }
@@ -178,7 +178,7 @@ input#control-nav {
 
 .item-skill {
   border: #FFC0D3 solid 1px;
-  border-radius: 50%;
+  border-radius: 30%;
   position: absolute;
   top: 0;
   right: 0;
@@ -186,13 +186,9 @@ input#control-nav {
   left: 0;
 }
 
-.item-skill:hover {
-  background: #FFC0D3;
-}
-
 .titulo-skill {
   position: absolute;
-	top: 18%;
+	top: 5%;
 	left: 0;
 	right: 0;
 	padding: .5em 0;
@@ -202,7 +198,7 @@ input#control-nav {
 
 .icone  {
   color: #FF5C8D;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 /*Section hobbie*/
@@ -224,7 +220,7 @@ input#control-nav {
 
 .item-hobbie {
   border: #FDEFF4 solid 1px;
-  border-radius: 50%;
+  border-radius: 30%;
   position: absolute;
   top: 0;
   right: 0;
@@ -232,17 +228,13 @@ input#control-nav {
   left: 0;
 }
 
-.item-hobbie:hover  {
-  background: #FDEFF4;
-}
-
 .titulo-hobbie {
   position: absolute;
-	top: 18%;
+	top: 8%;
 	left: 0;
 	right: 0;
 	padding: .5em 0;
-  font-size: 1.6em;
+  font-size: 1.4em;
   color: #524A4E;
 }
 
@@ -257,10 +249,6 @@ input#control-nav {
 
 .formacao:first-child {
   margin: 0;
-}
-
-.formacao:hover {
-  background: #FFC0D3;
 }
 
 /*Section projetos*/
@@ -402,7 +390,7 @@ input#control-nav {
 .mensagem textarea {
   position: absolute;
   height: 100%;
-  width: 100%; 
+  width: 100%;
   resize: none;
   background: #fae9fb;
   border: 2px solid #FF5C8D;
@@ -483,8 +471,8 @@ footer .fab {
    }
 
    .container {
-     flex-direction: column;
-   }
+    flex-direction: column;
+  }
 
    .formacao {
      margin: 0;
