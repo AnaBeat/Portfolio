@@ -319,10 +319,6 @@ input#control-nav {
   padding: 25px 20px;
 }
 
-.img-contato {
-  max-width: 55%;
-}
-
 .img-contato img {
   width: 100%;
 }
@@ -428,7 +424,7 @@ input#control-nav {
   transition: all 0.3s ease;
 }
 .input-caixa input[type="submit"]:hover{
-  background-color: #d43ddb;
+  background-color: #FFA8B8;
 }
 
 
@@ -483,8 +479,13 @@ footer .fab {
   }
   .conteudo{
     padding: 10px 0;
+    flex-direction: column;
   }
 
+  .conteudo form {
+    width: 100%;
+    margin-right: 0;
+  }
 
   header nav {
     position: fixed;
