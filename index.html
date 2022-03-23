@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-widht, height=device-height initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Portfólio - Ana</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -234,26 +234,29 @@
             <div class="img-contato">
              <img src="img/img-contato.png" alt="img-contato">
             </div>
-          <form action="#">
+          <form action="#" id="form-contato">
+            
             <div class="titulo-contato">Contato</div>
+            <ul id="mensagens-erro"></ul>
             <div class="input-caixa">
-              <input type="text" value="Digite seu nome" required>
-              <label>Nome completo</label>
+              <input type="text" id="nome" placeholder="Digite seu nome completo">
+              <label>Nome</label>
             </div>
             <div class="input-caixa">
-              <input type="text" value="Digite seu email" required>
+              <input type="text" placeholder="Digite seu email" id="email">
               <label>Email</label>
             </div>
             <div class="input-caixa">
-              <input type="text" value="Digite o assunto" required>
+              <input type="text" placeholder="Digite o assunto" id="assunto">
               <label>Assunto</label>
             </div>
             <div class="mensagem">
-              <textarea  cols="30" rows="10"></textarea>
+              <textarea  cols="30" rows="10" id="mensagem"></textarea>
               <label>Mensagem</label>
             </div>
             <div class="input-caixa">
-              <input type="submit" value="Enviar">
+              
+              <input type="submit" value="Enviar" id="enviar-contato">
             </div>
           </form>
         </div>
@@ -266,6 +269,8 @@
       <a href="https://github.com/AnaBeat"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/ana-beatriz-barros-costa/"><i class="fab fa-linkedin"></i></a>
     </footer>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
