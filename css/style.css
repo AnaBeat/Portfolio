@@ -145,7 +145,7 @@ input#control-nav {
   padding: 1em;
 }
 
-/*Section skills*/
+/*Section skills e hobbies*/
 
 
 #skills, #formacoes {
@@ -161,24 +161,22 @@ input#control-nav {
 	justify-content: center;
 }
 
-.skill {
+.skill, .hobbie {
 	position: relative;
 	margin: .5em;
 	width: 100%;
-	max-width: 80px;
+	max-width: 120px;
 	text-align: center;
 	overflow: hidden;
 }
 
-.skill::before {
+.skill::before, .hobbie::before {
   display: block;
   content: "";
   margin-top: 100%;
 }
 
-.item-skill {
-  border: #FFC0D3 solid 1px;
-  border-radius: 30%;
+.item-skill, .item-hobbie {
   position: absolute;
   top: 0;
   right: 0;
@@ -186,57 +184,22 @@ input#control-nav {
   left: 0;
 }
 
-.titulo-skill {
+.titulo-skill, .titulo-hobbie {
   position: absolute;
 	top: 5%;
 	left: 0;
 	right: 0;
 	padding: .5em 0;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #524A4E;
+  margin-top: 1em;
 }
 
 .icone  {
   color: #FF5C8D;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
-/*Section hobbie*/
-
-.hobbie {
-	position: relative;
-	margin: .5em;
-	width: 100%;
-	max-width: 150px;
-	text-align: center;
-	overflow: hidden;
-}
-
-.hobbie::before {
-  display: block;
-  content: "";
-  margin-top: 100%;
-}
-
-.item-hobbie {
-  border: #FDEFF4 solid 1px;
-  border-radius: 30%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.titulo-hobbie {
-  position: absolute;
-	top: 8%;
-	left: 0;
-	right: 0;
-	padding: .5em 0;
-  font-size: 1.4em;
-  color: #524A4E;
-}
 
 /*Section formação*/
 
