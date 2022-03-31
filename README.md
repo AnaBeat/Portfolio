@@ -1,4 +1,4 @@
-Semana 1 e 2 Challenge Oracle ONE - Front End
+Challenge Oracle ONE - Front End
 
 ## Portfólio
 
